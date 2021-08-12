@@ -4,7 +4,7 @@ CREATE OR REPLACE PACKAGE PCK_PBX AS
 -- Author       : 
 -- Description  : Package for Hosted PBX
 -- Requirements : PCK_MIDDLE
--- License      : The contents of this document can only be derived rights against Belize Telemedia Limited
+-- License      : The contentsssss of this document can only be derived rights against Belize Telemedia Limited
 --                if they are supported by duly signed documents. The information may be confidential and 
 --                only for use by the addressee (s). If you have this document unjustly in your possession,
 --                you are requested to destroy it. It is not allowed to revise this document or parts thereof,
