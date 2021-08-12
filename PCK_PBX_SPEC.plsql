@@ -1,6 +1,6 @@
 CREATE OR REPLACE PACKAGE PCK_PBX AS
 -- --------------------------------------------------------------------------
--- Name         : PCK_PBXsssss
+-- Name         : PCK_PBX
 -- Author       : 
 -- Description  : Package for Hosted PBX
 -- Requirements : PCK_MIDDLE
