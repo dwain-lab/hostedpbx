@@ -9,7 +9,7 @@ CREATE OR REPLACE PACKAGE PCK_PBX AS
 --                only for use by the addressee (s). If you have this document unjustly in your possession,
 --                you are requested to destroy it. It is not allowed to revise this document or parts thereof,
 --                copying or use outside of its context.
--- Ammedments   :
+-- Amendments   :
 --   When         Who                   What
 --   ===========  ===============       =================================================
 --   25-May-2021  Zane Gibson           Initial Creation
@@ -17,7 +17,7 @@ CREATE OR REPLACE PACKAGE PCK_PBX AS
 --   27-May-2021  Dwain Wagner            Add:
 --                                          *fn_add_subscriber - add subscriber to pbx
 --   31-May-2021  Dwain Wagner            Add:
---                                          *fn_find_trunk - find turnk to complete pbx
+--                                          *fn_find_trunk - find trunk to complete pbx
 --   03-Jun-2021  Dwain Wagner            Add:
 --                                          *fn_add_tenant - add tenant to MultiTenant Manager
 --   04-Jun-2021  Keenan Bernard        Added function FN_DELETE_SUBSCRIBER
@@ -58,7 +58,7 @@ CREATE OR REPLACE PACKAGE PCK_PBX AS
     GV_OUTGOING_INSECURE     VARCHAR2(20)  := 'port,invite';
     GV_OUTGOING_TYPE         VARCHAR2(1)   := '1';   --Allow inbound calls
     GV_OUTGOING_PORT         NUMBER        := 5060;
---MultiTenant Mananger
+--MultiTenant Manager
     GV_HTTP_TENANT_URL       VARCHAR2(200):='https://pbx.btl.net/api';
     GV_URL                   VARCHAR2(200) :='https://devtest.pbx.btl.net/api/authenticate';
     GV_PLAN_S                VARCHAR2(50)  := '334c21fe-b4a1-284f-d60e-a4838bae3eb4';
