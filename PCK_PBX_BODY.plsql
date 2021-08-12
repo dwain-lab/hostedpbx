@@ -203,11 +203,11 @@ BEGIN
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
         RETURN VO_RESULT;
     END IF;
 
@@ -233,11 +233,11 @@ BEGIN
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
         RETURN VO_RESULT;
     ELSIF(add_trunk_u2000_result != 0 AND add_trunk_helper_cpbx_result = 0) THEN
         VO_MESSAGE := 'partial success: success: cpbx | '||'error: U2000 code:'||add_trunk_u2000_result||'cpbx message:'||add_trunk_u2000_message;
@@ -259,11 +259,11 @@ BEGIN
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
         RETURN VO_RESULT;
     ELSIF(add_trunk_helper_cpbx_result != 0 AND add_trunk_u2000_result = 0) THEN
         VO_MESSAGE := 'partial success: success: U2000 | '||'error: cpbx code:'||add_trunk_helper_cpbx_result||'cpbx message:'||add_trunk_helper_cpbx_message;
@@ -285,11 +285,11 @@ BEGIN
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
         RETURN VO_RESULT;
     ELSE
         VO_MESSAGE := 'CPBX Error Code: '||add_trunk_helper_cpbx_result||'CPBX Error Message: '||add_trunk_helper_cpbx_message||' U2000 Error Code: '||add_trunk_u2000_result||' U2000 Error Message: '||add_trunk_u2000_message;
@@ -311,11 +311,11 @@ BEGIN
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
         RETURN VO_RESULT;
     END IF;
 
@@ -3052,11 +3052,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution
+--END Execute MID Log Execution
 
         RETURN vo_result;
     END IF;
@@ -3076,11 +3076,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution      
+--END Execute MID Log Execution      
 
     RETURN vo_result;
 
@@ -3265,11 +3265,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
-        --Exectute MID Log Execution
+        --Execute MID Log Execution
                 pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                             vv_mid_id_user,
                                             vv_exe_time);
-        --END Exectute MID Log Execution  
+        --END Execute MID Log Execution  
         RETURN vo_result;
     END IF;
 
@@ -3300,11 +3300,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
-        --Exectute MID Log Execution
+        --Execute MID Log Execution
                 pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                             vv_mid_id_user,
                                             vv_exe_time);
-        --END Exectute MID Log Execution  
+        --END Execute MID Log Execution  
         RETURN vo_result;    
     ELSIF (get_trunk_result = 0) THEN
         ROLLBACK;
@@ -3323,11 +3323,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
-        --Exectute MID Log Execution
+        --Execute MID Log Execution
                 pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                             vv_mid_id_user,
                                             vv_exe_time);
-        --END Exectute MID Log Execution  
+        --END Execute MID Log Execution  
         RETURN vo_result;  
     ELSIF (get_trunk_result != 21) THEN
         ROLLBACK;
@@ -3346,11 +3346,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
-        --Exectute MID Log Execution
+        --Execute MID Log Execution
                 pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                             vv_mid_id_user,
                                             vv_exe_time);
-        --END Exectute MID Log Execution  
+        --END Execute MID Log Execution  
         RETURN vo_result;    
     END IF;
 
@@ -3375,11 +3375,11 @@ END IF;
                                  || vo_message
                                  || '|'
                                  || vo_result);
-        --Exectute MID Log Execution
+        --Execute MID Log Execution
                 pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                             vv_mid_id_user,
                                             vv_exe_time);
-        --END Exectute MID Log Execution
+        --END Execute MID Log Execution
 
         RETURN vo_result;
     END IF;
@@ -3401,11 +3401,11 @@ END IF;
                                  || '|'
                                  || vo_result);
 
---Exectute MID Log Execution
+--Execute MID Log Execution
         pck_middle.mid_log_execution(vv_sid, sysdate, vv_log_message, vv_id_interface, vv_id_codsystem,
                                     vv_mid_id_user,
                                     vv_exe_time);
---END Exectute MID Log Execution    
+--END Execute MID Log Execution    
 
     RETURN vo_result;
 
